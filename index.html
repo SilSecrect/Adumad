@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/umad.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ADUMADFLOR</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <i class="bx bx-equalizer"></i>
+        <div class="logo-name"><span style="color: var(--dark); color: black;">AD</span>UMADFLOR</div>
+      </a>
+      <nav>
+        <i style=" color: var(--light); color: #562fc0;" class="bx bx-menu"></i>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="profile">
+          <img src="images/umad.png" />
+        </a>
+      </nav>
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#" class="logo">
+        <i class="bx bx-equalizer icon-logo"></i>
+        <div class="logo-name"><span>AD</span>UMADFLOR</div>
+      </a>
+      <ul class="side-menu">
+        <li class="active">
+          <a href="#"><i class="bx bxs-home-heart"></i>Inicio</a>
+        </li>
+        <li>
+          <a href="membro.html"><i class="bx bxs-user-detail"></i>Membros</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-clipboard"></i>Compromisso</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-message-square-dots"></i>Anotações</a>
+        </li>
+        <li>
+          <a href="lideranca.html"><i class="bx bx-group"></i>Liderança</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-cog"></i>Configuração</a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bx-log-out-circle"></i>
+            Sair
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+      <main>
+        <div class="header">
+          <div class="left">
+            <h1 style="margin-top: 40px">Secretaria</h1>
+            <ul class="breadcrumb">
+              <li><a href="#"> ADM </a></li>
+              /
+              <li><a href="#" class="active">Jovens</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Insights -->
+        <ul class="insights">
+          <li>
+            <i class="bx bx-calendar-check"></i>
+            <span class="info">
+              <h3>Conferencia 13/04 as 18:30</h3>
+              <p>Compromisso</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-line-chart"></i>
+            <span class="info">
+              <h3>Havera ensaio hoje</h3>
+              <p>Anotações</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-show-alt"></i>
+            <span class="info">
+              <h3>0,00</h3>
+              <p>Carnê</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bx-dollar-circle"></i>
+            <span class="info">
+              <h3>0,00</h3>
+              <p>Caixa</p>
+            </span>
+          </li>
+        </ul>
+
+        <!-- End of Insights -->
+        <div class="content-group">
+          <div class="recent--patients">
+            <div class="title">
+              <h2
+                style="display: flex; align-items: center; gap: 20px"
+                class="section--title"
+              >
+                <i class="bx bxs-user-detail"></i>Membros do Grupo
+              </h2>
+            </div>
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Dada Nascimento</th>
+                    <th>Situação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="images/umad.png" alt="" height="40px" /></td>
+                    <td>Thomas Jefferson</td>
+                    <td>11/06/1994</td>
+                    <td>
+                      <span onclick="btn()">
+                        <strong>ver</strong> descrição</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="recent--patients">
+            <div class="title">
+              <h2
+                style="display: flex; align-items: center; gap: 20px"
+                class="section--title"
+              >
+                <i class="bx bx-group"></i> Liderença
+              </h2>
+            </div>
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Data Nascimento</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="images/umad.png" /></td>
+                    <td>Thomas Jefferson</td>
+                    <td>11/06/1994</td>
+                    <td>
+                      <span onclick="btn()">
+                        <strong>ver</strong> descrição</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+
+    <script src="index.js"></script>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div>
+          <h1>Prazer!</h1>
+          <div style="display: flex; gap: 10px">
+            <img src="images/umad.png" height="70px" />
+            <div>
+              <p><strong>Nome:</strong> Ester Silva</p>
+              <p>
+                <strong>Descrição:</strong> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aliquid adipisci, similique vel
+                ullam quam perspiciatis doloribus, rem dolorum accusamus ab
+                numquam nobis deserunt eveniet suscipit veniam eum voluptatibus
+                voluptates vero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      function btn() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <footer style="width: 100%; display: flex; justify-content: center; background: var(--light); padding: 10px; text-align: center;margin-bottom: 0;">
+      <div >
+        <img src="images/umad.png" style="height: 40px; border-radius: 20px;"/>
+        <div>
+        <div style="border-bottom: 2px solid #562fc0;">
+          <p style=" color: var(--dark);">Grupo de Jovens ADUMADFLOR</p>
+        </div>
+        <div style="padding: 10px; color: var(--dark); ">
+          <a href="https://www.instagram.com/umadflor.sacodoslimoes/#" target="_blank"><i style=" color: var(--dark); "class='bx bxl-whatsapp' ></i></a>
+          <a href="https://www.instagram.com/umadflor.sacodoslimoes/#" target="_blank"><i style=" color: var(--dark);" class='bx bxl-instagram' ></i></a>
+        </div>
+        <div  style="background-color: #562fc0; padding: 10px 40px; border-radius: 40px;">
+          <p style="color: #ffffff;">Enderço Rua João Motta Espezim, 1315, Saco dos Limões </p>
+        </div>
+      </div>
+      </div> 
+    </footer>
+
+  </body>
+</html>
